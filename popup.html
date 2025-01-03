@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Scraper</title>
+  <title>ScrapeInMail</title>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -28,11 +28,25 @@
       padding: 16px;
     }
 
-    h1 {
-      font-size: 20px;
-      font-weight: 600;
+    .header {
+      display: flex;
+      align-items: center;
       margin-bottom: 16px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 14px;
       color: var(--linkedin-text);
+      opacity: 0.8;
+      margin-bottom: 16px;
     }
 
     button {
@@ -90,7 +104,10 @@
   </style>
 </head>
 <body>
-  <h1>ScrapeInMail</h1>
+  <div class="header">
+    <img src="icon_sim.png" alt="ScrapeInMail Logo" class="logo">
+    <p class="tagline">Scrape recruiter mails quickly!</p>
+  </div>
   <button id="scrape">Scrape Emails</button>
   <div id="spinner"></div>
   <ul id="emails"></ul>

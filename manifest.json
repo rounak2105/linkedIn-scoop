@@ -1,10 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "LinkedIn Email Scraper",
+    "name": "ScrapeInMail : LinkedIn Recruiter Email Scraper",
     "version": "1.0",
-    "description": "Scrape emails from LinkedIn Recruiter posts.",
+    "description": "Scrape emails from LinkedIn Recruiter posts & comments.",
     "permissions": ["activeTab", "scripting"],
     "host_permissions": ["https://www.linkedin.com/*"],
+    "icons": {
+      "16": "icon_sim-small.png",
+      "48": "icon_sim-small.png",
+      "128": "icon_sim-16.png"
+    },
     "action": {
       "default_popup": "popup.html"
     }
